@@ -16,7 +16,8 @@ import (
 //		  Thus, it would run in an O(n * log N) time complexity.
 //     2) If we aren't able to modify the string and create extra data structures, our only option is
 //        to compare letter by letter. First letter would compare itself with the other n - 1,
-//        the second would compare itself with another n - 2, etc. This would result in O(n - 1 + n - 2 + ... + 1),
+//        the second would compare itself with another n - 2, etc.
+//        This would result in O(n - 1 + n - 2 + ... + 1),
 //        i.e, O( (1 + n - 1) * (n - 1)/2 ) = O(n * (n - 1)/2 ) = O((nˆ2 - n)/2 ) = O(nˆ2)
 // --------------------------------------------------------------------------------------------------
 
