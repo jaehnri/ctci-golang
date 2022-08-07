@@ -13,6 +13,12 @@ func isOdd(a int) bool {
 	return a%2 != 0
 }
 
+// isPermutationOfPalindrome runs in O(n). Firstly, it creates a hashmap where the key is a char
+// and the value is how many times it appears on the string.
+// In order for a string to be a palindrome, it must be made of pairs of letters. At most, only
+// one character can appear an odd number of times in this string, i.e., the middle character.
+// After the creation of this hashmap, it iterates over the keys of the map and checks there are
+// no more than one odd number
 func isPermutationOfPalindrome(s string) bool {
 	m := make(map[rune]int)
 
@@ -33,7 +39,7 @@ func isPermutationOfPalindrome(s string) bool {
 		}
 	}
 
-	return isOdd(odds) || odds == 0
+	return odds <= 1
 }
 
 func main() {
