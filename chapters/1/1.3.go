@@ -11,6 +11,12 @@ import (
 //		and that you are given the "true" length of the string
 // --------------------------------------------------------------------------------------------------
 
+// replaceWithStringBuilder runs in O(n) (n is the size of the new string) as WriteRune and WriteString
+// only append a letter to an array.
+// This operation is O(1), becoming O(n) only when the array size needs to be increased, i.e, a bigger
+// buffer is created and the contents of the old full buffer needs to be copied. This rarely happen, so
+// the amortized cost is still O(1). sb.String() is also O(n), but is performed only once.
+// Space complexity is also O(n) as strings.Builder creates an additional buffer.
 func replaceWithStringBuilder(s string) string {
 	var sb strings.Builder
 
@@ -37,6 +43,10 @@ func calculateNewSize(s []rune) int {
 	return len(s) + 2*spaceCount
 }
 
+// replaceWithByteArray runs in O(n) too. First, a scan in the string s is done to see how many spaces
+// there are and check the size of the new string.
+// Then, the creation of the new string is done in reverse order. Space complexity is O(n) since a
+// bigger buffer is created, n being the size of the new string.
 func replaceWithByteArray(s []rune) []rune {
 	originalSize := len(s)
 	newSize := calculateNewSize(s)
