@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func IsMonotonic(array []int) bool {
 	nonDecreasing := true
 	nonIncreasing := true
@@ -21,6 +19,6 @@ func IsMonotonic(array []int) bool {
 
 }
 
-func main() {
-	fmt.Println(IsMonotonic([]int{-1, -5, -10, -1100, -1100, -1101, -1102, -9001}))
-}
+//func main() {
+//	fmt.Println(IsMonotonic([]int{-1, -5, -10, -1100, -1100, -1101, -1102, -9001}))
+//}
