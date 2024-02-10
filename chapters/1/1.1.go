@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -56,9 +55,9 @@ func stringWithAllAsciiCharacters() string {
 	return sb.String()
 }
 
-func main() {
-	fmt.Println(isUnique("abc"))
-	fmt.Println(isUnique("abcc"))
-	fmt.Println(isUnique(stringWithAllAsciiCharacters()))
-	fmt.Println(isUnique(stringWithAllAsciiCharacters() + "a"))
-}
+// func main() {
+// 	fmt.Println(isUnique("abc"))
+// 	fmt.Println(isUnique("abcc"))
+// 	fmt.Println(isUnique(stringWithAllAsciiCharacters()))
+// 	fmt.Println(isUnique(stringWithAllAsciiCharacters() + "a"))
+// }

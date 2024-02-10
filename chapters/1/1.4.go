@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // --------------------------------------------------------------------------------------------------
 // 1.4) Palindrome Permutation: Given a string, write a function to check if it is a permutation of
 //      a palindrome. A palindrome is a word or phrase that is the same forwards and backwards.
@@ -42,13 +40,13 @@ func isPermutationOfPalindrome(s string) bool {
 	return odds <= 1
 }
 
-func main() {
-	fmt.Println(isPermutationOfPalindrome("a"))
-	fmt.Println(isPermutationOfPalindrome("aa"))
-	fmt.Println(isPermutationOfPalindrome("aab"))
-	fmt.Println(isPermutationOfPalindrome("aaaab"))
-	fmt.Println(isPermutationOfPalindrome("aabbb"))
-	fmt.Println(isPermutationOfPalindrome("ab"))
-	fmt.Println(isPermutationOfPalindrome("aaab"))
-	fmt.Println(isPermutationOfPalindrome("tactcoapapa"))
-}
+// func main() {
+// 	fmt.Println(isPermutationOfPalindrome("a"))
+// 	fmt.Println(isPermutationOfPalindrome("aa"))
+// 	fmt.Println(isPermutationOfPalindrome("aab"))
+// 	fmt.Println(isPermutationOfPalindrome("aaaab"))
+// 	fmt.Println(isPermutationOfPalindrome("aabbb"))
+// 	fmt.Println(isPermutationOfPalindrome("ab"))
+// 	fmt.Println(isPermutationOfPalindrome("aaab"))
+// 	fmt.Println(isPermutationOfPalindrome("tactcoapapa"))
+// }

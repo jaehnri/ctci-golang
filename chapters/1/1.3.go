@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -74,16 +73,16 @@ func replaceWithByteArray(s []rune) []rune {
 	return newString
 }
 
-func main() {
-	fmt.Println(replaceWithStringBuilder("Mr 3ohn Smith"))
-	fmt.Println(replaceWithStringBuilder("abcd"))
-	fmt.Println(replaceWithStringBuilder("abc d e"))
-	fmt.Println(replaceWithStringBuilder(""))
-	fmt.Println(replaceWithStringBuilder(" "))
+// func main() {
+// 	fmt.Println(replaceWithStringBuilder("Mr 3ohn Smith"))
+// 	fmt.Println(replaceWithStringBuilder("abcd"))
+// 	fmt.Println(replaceWithStringBuilder("abc d e"))
+// 	fmt.Println(replaceWithStringBuilder(""))
+// 	fmt.Println(replaceWithStringBuilder(" "))
 
-	fmt.Println(string(replaceWithByteArray([]rune("Mr 3ohn Smith"))))
-	fmt.Println(string(replaceWithByteArray([]rune("abcd"))))
-	fmt.Println(string(replaceWithByteArray([]rune("abc d e"))))
-	fmt.Println(string(replaceWithByteArray([]rune(""))))
-	fmt.Println(string(replaceWithByteArray([]rune(" "))))
-}
+// 	fmt.Println(string(replaceWithByteArray([]rune("Mr 3ohn Smith"))))
+// 	fmt.Println(string(replaceWithByteArray([]rune("abcd"))))
+// 	fmt.Println(string(replaceWithByteArray([]rune("abc d e"))))
+// 	fmt.Println(string(replaceWithByteArray([]rune(""))))
+// 	fmt.Println(string(replaceWithByteArray([]rune(" "))))
+// }

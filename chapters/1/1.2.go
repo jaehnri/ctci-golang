@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // --------------------------------------------------------------------------------------------------
 // 1.2) Check Permutation: Given two strings, write a method to decide if one is a permutation of the
 //	other.
@@ -44,8 +42,8 @@ func checkPermutation(s1, s2 string) bool {
 	return true
 }
 
-func main() {
-	fmt.Println(checkPermutation("abc", "cab"))
-	fmt.Println(checkPermutation("abc", "cabd"))
-	fmt.Println(checkPermutation("abc", "cad"))
-}
+// func main() {
+// 	fmt.Println(checkPermutation("abc", "cab"))
+// 	fmt.Println(checkPermutation("abc", "cabd"))
+// 	fmt.Println(checkPermutation("abc", "cad"))
+// }
