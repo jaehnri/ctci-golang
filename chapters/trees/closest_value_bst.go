@@ -2,12 +2,12 @@ package main
 
 import "math"
 
-type BST struct {
-	Value int
-
-	Left  *BST
-	Right *BST
-}
+//type BST struct {
+//	Value int
+//
+//	Left  *BST
+//	Right *BST
+//}
 
 func (tree *BST) FindClosestValue(target int) int {
 	return FindClosestValueRec(*tree, target, tree.Value)
