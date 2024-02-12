@@ -1,6 +1,8 @@
 package main
 
-import "errors"
+import (
+	"errors"
+)
 
 type BST struct {
 	Value int
@@ -11,10 +13,8 @@ type BST struct {
 
 func (tree *BST) Insert(value int) *BST {
 	if tree == nil {
-		tree.Value = value
-		return tree
+		return &BST{Value: value}
 	}
-
 	if value < tree.Value {
 		if tree.Left == nil {
 			tree.Left = &BST{Value: value}
