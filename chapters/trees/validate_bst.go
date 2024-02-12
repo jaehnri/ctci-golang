@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 type BSTInfo struct {
 	Valid bool
 	Max   int
@@ -45,15 +41,15 @@ func (tree *BST) ValidateBstMaxMin() BSTInfo {
 	return BSTInfo{Valid: true, Min: treeMin, Max: treeMax}
 }
 
-func main() {
-	tree := &BST{Value: 10}
-	tree.Left = &BST{Value: 5}
-	tree.Left.Left = &BST{Value: 2}
-	tree.Left.Left.Left = &BST{Value: 1}
-	tree.Left.Right = &BST{Value: 5}
-	tree.Left.Right.Right = &BST{Value: 11}
-	tree.Right = &BST{Value: 15}
-	tree.Right.Right = &BST{Value: 22}
-
-	fmt.Println(tree.ValidateBstMaxMin())
-}
+//func main() {
+//	tree := &BST{Value: 10}
+//	tree.Left = &BST{Value: 5}
+//	tree.Left.Left = &BST{Value: 2}
+//	tree.Left.Left.Left = &BST{Value: 1}
+//	tree.Left.Right = &BST{Value: 5}
+//	tree.Left.Right.Right = &BST{Value: 11}
+//	tree.Right = &BST{Value: 15}
+//	tree.Right.Right = &BST{Value: 22}
+//
+//	fmt.Println(tree.ValidateBstMaxMin())
+//}
