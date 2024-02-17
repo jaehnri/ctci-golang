@@ -45,21 +45,21 @@ func Max(a, b int) int {
 	return b
 }
 
-func main() {
-	//root := &BinaryTree{Value: 1}
-	//root.Left = &BinaryTree{Value: 3}
-	//root.Left.Left = &BinaryTree{Value: 7}
-	//root.Left.Left.Left = &BinaryTree{Value: 8}
-	//root.Left.Left.Left.Right = &BinaryTree{Value: 1}
-	//root.Left.Left.Left.Right.Right = &BinaryTree{Value: 2}
-	//root.Left.Left.Left.Left = &BinaryTree{Value: 9}
-	//root.Left.Right = &BinaryTree{Value: 4}
-	//root.Left.Right.Right = &BinaryTree{Value: 5}
-	//root.Left.Right.Right.Right = &BinaryTree{Value: 6}
-	//root.Right = &BinaryTree{Value: 2}
-	//fmt.Println(BinaryTreeDiameter(root))
-
-	//root := &BinaryTree{Value: 4}
-	//root.Left = &BinaryTree{Value: 2}
-	//fmt.Println(BinaryTreeDiameter(root))
-}
+//func main() {
+//	//root := &BinaryTree{Value: 1}
+//	//root.Left = &BinaryTree{Value: 3}
+//	//root.Left.Left = &BinaryTree{Value: 7}
+//	//root.Left.Left.Left = &BinaryTree{Value: 8}
+//	//root.Left.Left.Left.Right = &BinaryTree{Value: 1}
+//	//root.Left.Left.Left.Right.Right = &BinaryTree{Value: 2}
+//	//root.Left.Left.Left.Left = &BinaryTree{Value: 9}
+//	//root.Left.Right = &BinaryTree{Value: 4}
+//	//root.Left.Right.Right = &BinaryTree{Value: 5}
+//	//root.Left.Right.Right.Right = &BinaryTree{Value: 6}
+//	//root.Right = &BinaryTree{Value: 2}
+//	//fmt.Println(BinaryTreeDiameter(root))
+//
+//	//root := &BinaryTree{Value: 4}
+//	//root.Left = &BinaryTree{Value: 2}
+//	//fmt.Println(BinaryTreeDiameter(root))
+//}
