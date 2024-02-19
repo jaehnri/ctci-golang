@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func HasSingleCycle(array []int) bool {
 	visited := make([]bool, len(array))
 
@@ -54,8 +52,4 @@ func updateIndex(current, offset, bound int) int {
 	}
 
 	return current + offset - bound
-}
-
-func main() {
-	fmt.Println(HasSingleCycle([]int{2, 3, 1, -4, -4, 2}))
 }
