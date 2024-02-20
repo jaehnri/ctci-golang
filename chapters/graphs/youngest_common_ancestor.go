@@ -6,32 +6,37 @@ type AncestralTree struct {
 }
 
 func GetYoungestCommonAncestor(top, descendantOne, descendantTwo *AncestralTree) *AncestralTree {
-	oneAncestors := make(map[string]bool)
-	twoAncestors := make(map[string]bool)
-
 	onePointer := descendantOne
 	twoPointer := descendantTwo
 
-	for onePointer != nil || twoPointer != nil {
-		oneAncestors[onePointer.Name] = true
-		twoAncestors[twoPointer.Name] = true
-
-		if oneAncestors[twoPointer.Name] == true {
-			return twoPointer
-		}
-
-		if twoAncestors[onePointer.Name] == true {
-			return onePointer
-		}
-
-		if onePointer.Ancestor != nil {
-			onePointer = onePointer.Ancestor
-		}
-
-		if twoPointer.Ancestor != nil {
-			twoPointer = twoPointer.Ancestor
-		}
+	oneDescendantHeight := 0
+	for onePointer != top {
+		oneDescendantHeight++
+		onePointer = onePointer.Ancestor
 	}
 
-	return top
+	twoDescendantHeight := 0
+	for twoPointer != top {
+		twoDescendantHeight++
+		twoPointer = twoPointer.Ancestor
+	}
+
+	onePointer = descendantOne
+	twoPointer = descendantTwo
+	for twoDescendantHeight > oneDescendantHeight {
+		twoPointer = twoPointer.Ancestor
+		twoDescendantHeight--
+	}
+
+	for oneDescendantHeight > twoDescendantHeight {
+		onePointer = onePointer.Ancestor
+		oneDescendantHeight--
+	}
+
+	for onePointer.Name != twoPointer.Name {
+		onePointer = onePointer.Ancestor
+		twoPointer = twoPointer.Ancestor
+	}
+
+	return onePointer
 }
