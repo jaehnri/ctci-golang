@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func RiverSizes(matrix [][]int) []int {
 	m := len(matrix)
 	n := len(matrix[0])
@@ -55,12 +53,12 @@ func calculateRiverSize(matrix [][]int, visited [][]bool, i, j int) int {
 	return 1 + up + down + left + right
 }
 
-func main() {
-	fmt.Println(RiverSizes([][]int{
-		{1, 0, 0, 1, 0},
-		{1, 0, 1, 0, 0},
-		{0, 0, 1, 0, 1},
-		{1, 0, 1, 0, 1},
-		{1, 0, 1, 1, 0},
-	}))
-}
+//func main() {
+//	fmt.Println(RiverSizes([][]int{
+//		{1, 0, 0, 1, 0},
+//		{1, 0, 1, 0, 0},
+//		{0, 0, 1, 0, 1},
+//		{1, 0, 1, 0, 1},
+//		{1, 0, 1, 1, 0},
+//	}))
+//}
