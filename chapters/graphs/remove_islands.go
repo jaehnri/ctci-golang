@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 const Mainland = 2
 
 func RemoveIslands(matrix [][]int) [][]int {
@@ -85,15 +83,16 @@ func markAsMainland(matrix [][]int, i, j int) {
 	}
 }
 
-func main() {
-	fmt.Println(RemoveIslands(
-		[][]int{
-			{1, 0, 0, 0, 0, 0},
-			{0, 1, 0, 1, 1, 1},
-			{0, 0, 1, 0, 1, 0},
-			{1, 1, 0, 0, 1, 0},
-			{1, 0, 1, 1, 0, 0},
-			{1, 0, 0, 0, 0, 1},
-		},
-	))
-}
+//
+//func main() {
+//	fmt.Println(RemoveIslands(
+//		[][]int{
+//			{1, 0, 0, 0, 0, 0},
+//			{0, 1, 0, 1, 1, 1},
+//			{0, 0, 1, 0, 1, 0},
+//			{1, 1, 0, 0, 1, 0},
+//			{1, 0, 1, 1, 0, 0},
+//			{1, 0, 0, 0, 0, 1},
+//		},
+//	))
+//}
